@@ -17,7 +17,6 @@ router.post('/tasks', auth, async (req, res) => {
     }
 })
 
-
 // GET /tasks?completed=false
 // Pagination :: GET /tasks?limit=10&skip=0
 // Sorting :: GET /tasks?sortBy=createdAt_asc
