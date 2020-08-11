@@ -3,14 +3,6 @@ const mail = require('@sendgrid/mail')
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
-// Test purpose
-// sgMail.send({
-//     to: 'ahamidnugroho@gmail.com',
-//     from: 'abdulhamidnugroho@gmail.com',
-//     subject: 'TESTTT',
-//     text: 'Hope this one actually sent'
-// })
-
 const sendWelcomeEmail = (email, name) => {
     sgMail.send({
         to: 'ahamidnugroho@gmail.com',
